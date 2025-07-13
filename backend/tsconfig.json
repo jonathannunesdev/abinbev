@@ -1,0 +1,81 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@config": [
+        "./config"
+      ],
+      "@infra/*": [
+        "./infra/*"
+      ],
+      "@controllers": [
+        "./presentation/controllers/index"
+      ],
+      "@abstract/*": [
+        "./core/abstract/*"
+      ],
+      "@core/*": [
+        "./core/*"
+      ],
+      "@core": [
+        "./core/abstract/gateway/index"
+      ],
+
+      "@usecases": [
+        "./domain/usecase/index"
+      ],
+      "@repository": [
+        "./infra/repository/index"
+      ],
+      "@entity": [
+        "./domain/entity/index"
+      ],
+      "@domain/*": [
+        "./domain/*"
+      ],
+      "@shared/*": [
+        "./shared/*"
+      ],
+      "@database": [
+        "./infra/database/index"
+      ],
+      "@middleware": [
+        "./infra/http/middleware/index"
+      ],
+      "@gateway": [
+        "./infra/gateway/jwt-gateway"
+      ],
+      "@gateways": [
+        "./infra/gateway/index"
+      ],
+      "@nestjs": [
+        "./infra/http/nestjs/index"
+      ],
+      "@entities": [
+        "./infra/orm/entities/index"
+      ],
+      "@orm/*": [
+        "./infra/orm/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
